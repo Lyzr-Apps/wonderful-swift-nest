@@ -19,7 +19,7 @@ import { cn } from '@/lib/utils'
 import {
   Users, Calendar as CalendarIcon, MessageSquare, Activity, Plus, Search, Send,
   Mail, Phone, Clock, TrendingUp, TrendingDown, Minus, FileText, Filter,
-  Download, BarChart, User, Home, Loader2, CheckCircle, XCircle, AlertCircle
+  Download, BarChart, User, Home as HomeIcon, Loader2, CheckCircle, XCircle, AlertCircle
 } from 'lucide-react'
 
 // AGENT IDS - From PRD specification
@@ -271,7 +271,7 @@ export default function Home() {
                 : "text-gray-700 hover:bg-gray-50"
             )}
           >
-            <Home className="w-5 h-5" />
+            <HomeIcon className="w-5 h-5" />
             Dashboard
           </button>
 
