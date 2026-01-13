@@ -1,0 +1,128 @@
+{
+  "agent_name": "Appointment Assistant Agent",
+  "agent_id": "6965e599c77a63c0bd4b5399",
+  "agent_purpose": "assistant",
+  "description": "Returns appointment scheduling, rescheduling details, suggested time slots, and appointment management actions",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "action_type": "string",
+      "appointment_details": {
+        "appointment_id": "null",
+        "patient_name": "null",
+        "department": "string",
+        "doctor": "string",
+        "date": "string",
+        "time": "string"
+      },
+      "suggested_slots": [
+        {
+          "date": "string",
+          "time": "string",
+          "doctor": "string",
+          "department": "string"
+        }
+      ],
+      "message": "string",
+      "next_steps": [
+        "string"
+      ],
+      "requires_confirmation": "boolean"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "action_type": "schedule",
+      "appointment_details": {
+        "appointment_id": null,
+        "patient_name": null,
+        "department": "General Medicine",
+        "doctor": "Dr. Emily Johnson",
+        "date": "2024-06-20",
+        "time": "10:00"
+      },
+      "suggested_slots": [
+        {
+          "date": "2024-06-20",
+          "time": "10:00",
+          "doctor": "Dr. Emily Johnson",
+          "department": "General Medicine"
+        },
+        {
+          "date": "2024-06-20",
+          "time": "11:30",
+          "doctor": "Dr. Emily Johnson",
+          "department": "General Medicine"
+        },
+        {
+          "date": "2024-06-21",
+          "time": "09:00",
+          "doctor": "Dr. Mark Lee",
+          "department": "General Medicine"
+        }
+      ],
+      "message": "I have found available appointments in the General Medicine department. Please review the suggested time slots and let me know which one works best for you.",
+      "next_steps": [
+        "Review the suggested appointment times.",
+        "Confirm your preferred slot, or let me know if you need additional options."
+      ],
+      "requires_confirmation": true
+    },
+    "metadata": {
+      "agent_name": "Appointment Assistant Agent",
+      "timestamp": "2024-06-14T09:30:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-13T06:26:44.416632",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "action_type": "schedule",
+      "appointment_details": {
+        "appointment_id": null,
+        "patient_name": null,
+        "department": "General Medicine",
+        "doctor": "Dr. Emily Johnson",
+        "date": "2024-06-20",
+        "time": "10:00"
+      },
+      "suggested_slots": [
+        {
+          "date": "2024-06-20",
+          "time": "10:00",
+          "doctor": "Dr. Emily Johnson",
+          "department": "General Medicine"
+        },
+        {
+          "date": "2024-06-20",
+          "time": "11:30",
+          "doctor": "Dr. Emily Johnson",
+          "department": "General Medicine"
+        },
+        {
+          "date": "2024-06-21",
+          "time": "09:00",
+          "doctor": "Dr. Mark Lee",
+          "department": "General Medicine"
+        }
+      ],
+      "message": "I have found available appointments in the General Medicine department. Please review the suggested time slots and let me know which one works best for you.",
+      "next_steps": [
+        "Review the suggested appointment times.",
+        "Confirm your preferred slot, or let me know if you need additional options."
+      ],
+      "requires_confirmation": true
+    },
+    "metadata": {
+      "agent_name": "Appointment Assistant Agent",
+      "timestamp": "2024-06-14T09:30:00Z"
+    }
+  }
+}

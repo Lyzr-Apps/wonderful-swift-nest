@@ -1,0 +1,87 @@
+{
+  "agent_name": "Follow-up Communication Agent",
+  "agent_id": "6965e5b6c831c63e265e0b56",
+  "agent_purpose": "assistant",
+  "description": "Generates personalized follow-up emails, appointment reminders, post-visit surveys, and care instructions with Gmail integration",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "communication_type": "string",
+      "email_content": {
+        "subject": "string",
+        "body": "string",
+        "recipient_email": "string",
+        "cc": [
+          "any"
+        ],
+        "attachments": [
+          "any"
+        ]
+      },
+      "personalization_elements": [
+        "string"
+      ],
+      "scheduled_send_time": "null",
+      "message": "string",
+      "email_sent": "boolean",
+      "send_status": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "communication_type": "follow_up",
+      "email_content": {
+        "subject": "We Care About Your Recovery \u2013 Follow-Up from Your Recent Visit",
+        "body": "Dear Patient,\n\nWe hope this message finds you well. We wanted to follow up regarding your recent visit at our hospital. Your health and comfort are our top priorities, and we are here to support you as you continue your recovery.\n\nIf you have any new symptoms, concerns, or questions about your care plan, please don't hesitate to reach out to us. Our team is ready to assist you in any way we can.\n\nThank you for trusting us with your healthcare needs. Wishing you a smooth and speedy recovery!\n\nBest regards,\nYour Care Team",
+        "recipient_email": "patient@example.com",
+        "cc": [],
+        "attachments": []
+      },
+      "personalization_elements": [
+        "patient name",
+        "recent visit date"
+      ],
+      "scheduled_send_time": null,
+      "message": "Generated a sample follow-up email for a patient after a recent visit.",
+      "email_sent": false,
+      "send_status": "draft"
+    },
+    "metadata": {
+      "agent_name": "Follow-up Communication Agent",
+      "timestamp": "2024-06-10T13:45:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-13T06:27:15.436342",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "communication_type": "follow_up",
+      "email_content": {
+        "subject": "We Care About Your Recovery \u2013 Follow-Up from Your Recent Visit",
+        "body": "Dear Patient,\n\nWe hope this message finds you well. We wanted to follow up regarding your recent visit at our hospital. Your health and comfort are our top priorities, and we are here to support you as you continue your recovery.\n\nIf you have any new symptoms, concerns, or questions about your care plan, please don't hesitate to reach out to us. Our team is ready to assist you in any way we can.\n\nThank you for trusting us with your healthcare needs. Wishing you a smooth and speedy recovery!\n\nBest regards,\nYour Care Team",
+        "recipient_email": "patient@example.com",
+        "cc": [],
+        "attachments": []
+      },
+      "personalization_elements": [
+        "patient name",
+        "recent visit date"
+      ],
+      "scheduled_send_time": null,
+      "message": "Generated a sample follow-up email for a patient after a recent visit.",
+      "email_sent": false,
+      "send_status": "draft"
+    },
+    "metadata": {
+      "agent_name": "Follow-up Communication Agent",
+      "timestamp": "2024-06-10T13:45:00Z"
+    }
+  }
+}

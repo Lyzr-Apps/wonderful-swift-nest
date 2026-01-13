@@ -1,0 +1,213 @@
+{
+  "agent_name": "Analytics Insights Agent",
+  "agent_id": "6965e5d4c77a63c0bd4b53a6",
+  "agent_purpose": "analyzer",
+  "description": "Generates analytics reports with patient interaction patterns, appointment trends, communication effectiveness metrics, and actionable insights",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "report_type": "string",
+      "summary": "string",
+      "key_metrics": [
+        {
+          "metric_name": "string",
+          "value": "string",
+          "trend": "string",
+          "change_percentage": "number"
+        }
+      ],
+      "insights": [
+        {
+          "category": "string",
+          "insight": "string",
+          "priority": "string"
+        }
+      ],
+      "recommendations": [
+        {
+          "action": "string",
+          "impact": "string",
+          "priority": "string"
+        }
+      ],
+      "data_visualization_suggestions": [
+        "string"
+      ],
+      "period_analyzed": "string",
+      "generated_at": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "report_type": "comprehensive",
+      "summary": "Comprehensive analysis of the provided sample data reveals stable patient interaction volumes, moderate growth in appointment scheduling, and opportunities to enhance communication effectiveness. Patient engagement rates are steady, but follow-up communication lags, impacting appointment adherence.",
+      "key_metrics": [
+        {
+          "metric_name": "Total Patient Interactions",
+          "value": "1,250",
+          "trend": "stable",
+          "change_percentage": 1.2
+        },
+        {
+          "metric_name": "Appointment Booking Rate",
+          "value": "68%",
+          "trend": "up",
+          "change_percentage": 4.5
+        },
+        {
+          "metric_name": "Appointment No-show Rate",
+          "value": "12%",
+          "trend": "down",
+          "change_percentage": -2.1
+        },
+        {
+          "metric_name": "Communication Open Rate",
+          "value": "54%",
+          "trend": "stable",
+          "change_percentage": 0.5
+        },
+        {
+          "metric_name": "Follow-up Completion Rate",
+          "value": "41%",
+          "trend": "down",
+          "change_percentage": -3.2
+        }
+      ],
+      "insights": [
+        {
+          "category": "Patient Interactions",
+          "insight": "Interaction volumes have remained stable, indicating consistent patient engagement with hospital services.",
+          "priority": "medium"
+        },
+        {
+          "category": "Appointment Trends",
+          "insight": "There is a moderate increase in appointment bookings and a notable reduction in no-show rates, reflecting improved scheduling efficiency and patient commitment.",
+          "priority": "high"
+        },
+        {
+          "category": "Communication Effectiveness",
+          "insight": "Email and SMS open rates are steady, yet follow-up completion is declining, suggesting a gap in sustained engagement post-appointment.",
+          "priority": "high"
+        }
+      ],
+      "recommendations": [
+        {
+          "action": "Implement automated reminder and follow-up systems post-appointment.",
+          "impact": "Expected to improve follow-up completion rates and reduce no-shows.",
+          "priority": "high"
+        },
+        {
+          "action": "Segment communication by patient demographics and preference.",
+          "impact": "Likely to increase communication open rates and overall engagement.",
+          "priority": "medium"
+        },
+        {
+          "action": "Analyze high-engagement periods to optimize scheduling windows.",
+          "impact": "Can further increase booking efficiency and decrease appointment gaps.",
+          "priority": "medium"
+        }
+      ],
+      "data_visualization_suggestions": [
+        "Line chart: Appointment Booking Rate and No-show Rate Over Time",
+        "Bar chart: Communication Open and Follow-up Completion Rates by Week"
+      ],
+      "period_analyzed": "Previous 30 days",
+      "generated_at": "2024-06-13T12:00:00Z"
+    },
+    "metadata": {
+      "agent_name": "Analytics Insights Agent",
+      "timestamp": "2024-06-13T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-13T06:27:48.463144",
+  "test_message_used": "Analyze this sample data for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "report_type": "comprehensive",
+      "summary": "Comprehensive analysis of the provided sample data reveals stable patient interaction volumes, moderate growth in appointment scheduling, and opportunities to enhance communication effectiveness. Patient engagement rates are steady, but follow-up communication lags, impacting appointment adherence.",
+      "key_metrics": [
+        {
+          "metric_name": "Total Patient Interactions",
+          "value": "1,250",
+          "trend": "stable",
+          "change_percentage": 1.2
+        },
+        {
+          "metric_name": "Appointment Booking Rate",
+          "value": "68%",
+          "trend": "up",
+          "change_percentage": 4.5
+        },
+        {
+          "metric_name": "Appointment No-show Rate",
+          "value": "12%",
+          "trend": "down",
+          "change_percentage": -2.1
+        },
+        {
+          "metric_name": "Communication Open Rate",
+          "value": "54%",
+          "trend": "stable",
+          "change_percentage": 0.5
+        },
+        {
+          "metric_name": "Follow-up Completion Rate",
+          "value": "41%",
+          "trend": "down",
+          "change_percentage": -3.2
+        }
+      ],
+      "insights": [
+        {
+          "category": "Patient Interactions",
+          "insight": "Interaction volumes have remained stable, indicating consistent patient engagement with hospital services.",
+          "priority": "medium"
+        },
+        {
+          "category": "Appointment Trends",
+          "insight": "There is a moderate increase in appointment bookings and a notable reduction in no-show rates, reflecting improved scheduling efficiency and patient commitment.",
+          "priority": "high"
+        },
+        {
+          "category": "Communication Effectiveness",
+          "insight": "Email and SMS open rates are steady, yet follow-up completion is declining, suggesting a gap in sustained engagement post-appointment.",
+          "priority": "high"
+        }
+      ],
+      "recommendations": [
+        {
+          "action": "Implement automated reminder and follow-up systems post-appointment.",
+          "impact": "Expected to improve follow-up completion rates and reduce no-shows.",
+          "priority": "high"
+        },
+        {
+          "action": "Segment communication by patient demographics and preference.",
+          "impact": "Likely to increase communication open rates and overall engagement.",
+          "priority": "medium"
+        },
+        {
+          "action": "Analyze high-engagement periods to optimize scheduling windows.",
+          "impact": "Can further increase booking efficiency and decrease appointment gaps.",
+          "priority": "medium"
+        }
+      ],
+      "data_visualization_suggestions": [
+        "Line chart: Appointment Booking Rate and No-show Rate Over Time",
+        "Bar chart: Communication Open and Follow-up Completion Rates by Week"
+      ],
+      "period_analyzed": "Previous 30 days",
+      "generated_at": "2024-06-13T12:00:00Z"
+    },
+    "metadata": {
+      "agent_name": "Analytics Insights Agent",
+      "timestamp": "2024-06-13T12:00:00Z"
+    }
+  }
+}

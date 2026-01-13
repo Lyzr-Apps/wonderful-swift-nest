@@ -1,0 +1,56 @@
+{
+  "agent_name": "Patient Inquiry Agent",
+  "agent_id": "6965e582c77a63c0bd4b5394",
+  "agent_purpose": "assistant",
+  "description": "Returns conversational responses to patient inquiries about hospital services, policies, visiting hours, and healthcare information",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "answer": "string",
+      "category": "string",
+      "follow_up_suggestions": [
+        "string"
+      ],
+      "requires_human_escalation": "boolean"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "answer": "Hello! Thank you for reaching out. How can I assist you today regarding our hospital\u2019s services, visiting hours, departments, or any general healthcare questions? I am here to help provide information and support.",
+      "category": "other",
+      "follow_up_suggestions": [
+        "Ask about hospital visiting hours",
+        "Request information on specific hospital services"
+      ],
+      "requires_human_escalation": false
+    },
+    "metadata": {
+      "agent_name": "Patient Inquiry Agent",
+      "timestamp": "2024-06-14T14:32:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-13T06:26:19.683636",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "answer": "Hello! Thank you for reaching out. How can I assist you today regarding our hospital\u2019s services, visiting hours, departments, or any general healthcare questions? I am here to help provide information and support.",
+      "category": "other",
+      "follow_up_suggestions": [
+        "Ask about hospital visiting hours",
+        "Request information on specific hospital services"
+      ],
+      "requires_human_escalation": false
+    },
+    "metadata": {
+      "agent_name": "Patient Inquiry Agent",
+      "timestamp": "2024-06-14T14:32:00Z"
+    }
+  }
+}
